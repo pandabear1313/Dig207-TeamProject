@@ -169,6 +169,74 @@
             background-color: #FFC0D9;
             color: white;
         }
+
+        .footer {
+            background-color: #FFC0D9;
+            width: 100%;
+            padding: 20px 0px 0px;
+        }
+
+        .socialIcons {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            width: 25%;
+        }
+        
+        .socialIcons a{
+            text-decoration: none;
+            padding: 10px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+            transition: 0.5s;
+            
+        }
+        .socialIcons a img{
+            width: 100%;
+            opacity: 0.9;
+        }
+        
+        .socialIcons a:hover{
+            background-color: #FFC0D9;
+            transition: 0.5s;
+        }
+        
+        .footerNav {
+            padding: 0;
+            margin: 30px 0;
+            box-sizing: border-box;
+        }
+        
+        .footerNav ul{
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+        
+        .footerNav ul li a{
+            color: black;
+            margin: 20px;
+            text-decoration: none;
+            font-size: 12px;
+            opacity: 0.75;
+            transition: 0.5s;
+        }
+        
+        .footerNav ul li a:hover{
+            opacity: 1.5;
+        }
+
+        .footerBottom {
+            padding: 7px;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: #cc92a9;
+            text-align: center;
+            color: black;
+        }
     </style>
 </head>
 
@@ -313,9 +381,31 @@
         </nav>
     </header>
 
+    <center>
+        <div class="footer">
 
-    <footer>
-    </footer>
+            <div class="socialIcons">
+                <a href=""><img src="/images/email.png" alt="Email Address"></a>
+                <a href=""><img src="/images/facebook.png" alt="Facebook Profile"></a>
+                <a href=""><img src="/images/Instagram.png" alt="Instagram Profile"></a>
+               <a href=""><img src="/images/linkedin.png" alt="Linked In Profile"></a>
+            </div>
+        
+            <div class="footerNav">
+                <ul>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footerBottom">
+                <p>Copyright &copy; 2023. Tiny Treasures Pediatrics. All Rights Reserved.</p>
+            </div>
+        </div>
+    </center>
+    
 </body>
 
 <script src="./js/index.js"></script>
