@@ -1,0 +1,108 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #cfcbcb;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 40px;
+
+}
+
+input,
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+label {
+
+    display: block;
+
+}
+
+.cards {
+
+    height: 20px;
+    width: 20px;
+}
+
+button {
+
+    background-color: blue;
+    border: none;
+    width: 100%;
+    color: #f4f4f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 100%;
+    transition: 3ms ease-in-out;
+}
+
+
+button:hover {
+
+    transition: 3ms ease-in-out;
+}
+
+#CVV {
+
+    margin-bottom: 15px;
+
+}
+
+#months {
+
+    margin-bottom: 9px;
+
+}
+
+.cards1 {
+
+    width: 20%;
+    position: relative;
+    left: 200px;
+    bottom: 49px;
+}
+
+.cards2 {
+
+    width: 20%;
+    position: relative;
+    left: 273px;
+    bottom: 150px;
+}
+
+.cards3 {
+
+    width: 20%;
+    position: relative;
+    left: 274px;
+    bottom: 145px;
+    margin-bottom: -100px;
+
+}
+
+::placeholder {
+
+    text-align: center;
+}
+button:hover {
+
+    opacity: 0.8;
+}
