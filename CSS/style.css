@@ -227,3 +227,136 @@ header {
     text-align: center;
     color: black;
 }
+
+
+#blog-hr {
+
+    border: 1.7px solid darkgrey;
+}
+
+
+
+#Child {
+
+    background-color: #b295c6;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    color: #f4f4ff;
+    font-size: 40px;
+    font-weight: 400;
+    width: 88%;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 70px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    
+
+
+}
+
+#Vacc {
+
+    background-color:  #f0c24b;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    color: #f4f4ff;
+    font-size: 40px;
+    font-weight: 400;
+    width: 88%;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 70px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    
+
+
+}
+
+#Parent {
+
+    background-color: #f3797f;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    color: #f4f4ff;
+    font-size: 40px;
+    font-weight: 400;
+    width: 88%;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 70px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    
+
+
+}
+
+#Other {
+
+    background-color: #0194d3;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    color: #f4f4ff;
+    font-size: 40px;
+    font-weight: 400;
+    width: 88%;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 70px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    
+
+
+}
+
+#res{
+
+    position: relative;
+    left: 80px;
+    color: #0194d3;
+    font-family:'sans-serif';
+}
+.blog-container {
+
+    text-align: center;
+}
+
+
+
+#Vacc:hover {
+
+    opacity: 0.9;
+}
+
+#Other:hover {
+
+    opacity: 0.9;
+}
+
+#Child:hover {
+
+    opacity: 0.9;
+}
+
+#Parent:hover {
+    opacity: 0.9;
+}
+
+
+
+
