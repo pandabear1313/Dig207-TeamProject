@@ -172,15 +172,17 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     text-decoration: whitesmoke;
-  }
-h1{
+}
+
+h1 {
     color: aliceblue;
 }
 
-.intr-o{
-    color:aliceblue;
+.intr-o {
+    color: aliceblue;
 }
-  .intro button {
+
+.intro button {
     background-color: #5edaf0;
     color: white;
     padding: 10px 25px;
@@ -190,7 +192,7 @@ h1{
     font-weight: bold;
     cursor: pointer;
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
-  }
+}
 
 .footer {
     background-color: #FFC0D9;
@@ -286,14 +288,14 @@ h1{
     height: 70px;
     font-family: 'Open Sans', sans-serif;
     position: relative;
-    
+
 
 
 }
 
 #Vacc {
 
-    background-color:  #f0c24b;
+    background-color: #f0c24b;
     border: none;
     border-radius: 8px;
     text-align: center;
@@ -308,7 +310,7 @@ h1{
     height: 70px;
     font-family: 'Open Sans', sans-serif;
     position: relative;
-    
+
 
 
 }
@@ -330,7 +332,7 @@ h1{
     height: 70px;
     font-family: 'Open Sans', sans-serif;
     position: relative;
-    
+
 
 
 }
@@ -352,18 +354,20 @@ h1{
     height: 70px;
     font-family: 'Open Sans', sans-serif;
     position: relative;
-    
+
 
 
 }
 
-#res{
+#res {
 
     position: relative;
     left: 80px;
     color: #0194d3;
-    font-family:'sans-serif';
+    font-family: 'sans-serif';
+    top: 30px;
 }
+
 .blog-container {
 
     text-align: center;
@@ -371,25 +375,39 @@ h1{
 
 
 
-#Vacc:hover {
-
-    opacity: 0.9;
-}
-
-#Other:hover {
-
-    opacity: 0.9;
-}
-
-#Child:hover {
-
-    opacity: 0.9;
-}
-
+#Vacc:hover,
+#Other:hover,
+#Child:hover,
 #Parent:hover {
+
     opacity: 0.9;
 }
 
+p,ul {
+    font-size: .875rem;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    position: relative;
+    left: 80px;
+    margin-left: 20px;
+    padding: 30px;
+    bottom: 30px;
+}
 
+h4{
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.53125rem;
+    color: #B295C6;
+    position: relative;
+    left: 80px;
+}
 
+.Paragraph-Container {
+
+    margin-right: 200px;
+}
 
