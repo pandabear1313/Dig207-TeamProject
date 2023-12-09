@@ -1,0 +1,90 @@
+.services-container {
+    max-width: 1200px;
+    margin: 15px auto; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+  }
+
+.services-flip {
+    background-color: transparent;
+    width: 300px;
+    height: 225px;
+    border: 1px solid plum;
+    box-sizing: border-box;
+    width: 300px;
+    margin: 15px;
+    padding: 20px;
+    border-radius:10px;
+    
+  }
+  
+  /* This container is needed to position the front and back side */
+  .services-inner {
+    position: relative;
+    width: 100%; 
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+
+    
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .services-flip:hover .services-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .service-card-front, .service-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+   
+  }
+  
+  /* Style the front side */
+  .service-card-front {
+    text-align: center;
+  }
+  
+  /* Style the back side */
+.service-card-back {
+    color:black;
+    transform: rotateY(180deg);
+    
+   
+  }
+
+  /* Style the images */
+  .service-image {
+    width: 50px;
+    height: 50px; 
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    border-radius: 10%;
+  }
+
+
+/* style headers */
+  .hOne {
+    color: #F74A8B;
+    margin-top: 70px; /* Adjust the margin-top as needed */
+}
+
+ .hTwo {
+    color: #71D8F1;
+    margin-top:70px;
+}
+
+p {
+    font-family: 'Indie Flower', cursive; /* Apply the cute font to paragraphs */
+    color: black;
+    font-size: 13px; /* Adjust font size as needed */
+    text-align: center;
+  }
