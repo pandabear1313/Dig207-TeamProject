@@ -16,6 +16,7 @@
 		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
 		<link rel="stylesheet" href="./scss/style.css" />
+		<link rel="stylesheet" href="./scss/appointment.css" />
 	</head>
 	<body>
 		<header>
@@ -151,7 +152,96 @@
 					<p class="hero-p">The Best Pediatrics Clinic in Saint Lucia!</p>
 				</div>
 			</section>
+		
+		<div class="apt-form-container">
+			<div class="apt-form">
+				<form action="#" id="appointform" method="post">
+					<h1 id="formH">Book Appointment</h1>
+		
+					<label for="select location" id="location">Select Location</label>
+					<select id="select-location">
+						<option value="Gros Islet">Gros Islet</option>
+						<option value="Castries">Castries</option>
+						<option value="Vieux Fort">Vieux Fort</option>
+					</select>
+		
+					<label for="date">Select Date</label>
+					<input type="date" id="date" name="date" class="dt" required>
+		
+					<label for="Utime">Select Time</label>
+					<input type="time" id="Utime" min="8:00" max="17:00" value="8:00" class="dt" required>
+		
+					<p id="note">Appointment hours are 8:00am to 5:00pm</p>
+		
+					<label for="appointment-type">Appointment Type</label>
+					<select id="appointment-type" name="appointment-type" required>
+						<option value="routine">Routine Checkup</option>
+						<option value="special">Specialized Checkup</option>
+						<option value="vaccine">Vaccinations</option>
+						<option value="consultation">Consultation</option>
+					</select>
+		
+					<div id="pricelist" class="personal-dets">
+						<h2>Price List</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Appointment Type</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody id="price-list-body">
+								
+								<tr>
+									<td>Routine Checkup</td>
+									<td>EC $170</td>
+								</tr>
+								<tr>
+									<td>Specialized Checkup</td>
+									<td>EC $300</td>
+								</tr>
+								<tr>
+									<td>Vaccinations</td>
+									<td>EC $50</td>
+								</tr>
+								<tr>
+									<td>Consultation</td>
+									<td>EC $120</td>
+								</tr>
+		
+							</tbody>
+						</table>
+					</div>
+		
+					<label for="personaldetails" id="p-dets" class="format"></label>
+					<br>
+					<label for="name" class="personal-dets">Enter Full Name:</label>
+					<input type="text" id="name" class="personal-dets" placeholder="John Doe" name="yname" required>
+		
+					<label for="tel" class="personal-dets">Enter Telephone Number:</label>
+					<input type="tel" id="tele" class="personal-dets" placeholder="1-758-458-6989" name="ynumber" required>
+		
+					<label for="email" class="personal-dets">Enter Email Address</label>
+					<input type="email" id="email" class="personal-dets" placeholder="johndoe@example.com" name="yemail"
+						required>
+		
+		
+					<label for="message" class="personal-dets">Additional Info</label>
+					<p id="note">Please add any extra information you may want us to know below</p>
+					<textarea id="message" rows="5" cols="3" class="personal-dets" placeholder="Type your message"
+						name="ymessage"></textarea>
+		
+					<button type="Submit" id="submit" value="submit" onclick="">Submit</button>
+		
+		
+		
+				</form>
+		
+			</div>
+		</div>
+			
 		</main>
+
 
 		<footer>
 			<div class="footer-social-icons">
