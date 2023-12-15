@@ -5,22 +5,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="theme-color" content="#ffc0d9" />
 
-		<title>Home - Tiny Treasures Pediatric Clinic</title>
+		<title>Sign Up - Tiny Treasures Pediatric Clinic</title>
 
 		<link rel="shortcut icon" href="./img/favicon-16x16.png" type="image/x-icon" />
 
 		<link rel="preconnect" href="https://rsms.me/" />
 		<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
 		<link rel="stylesheet" href="./scss/style.css" />
 	</head>
 	<body>
 		<header>
-			<div class="banner" data-aos="fade-down" data-aos-delay="0" data-aos-duration="600" data-aos-easing="ease-in-out">
-				<a href="tel:17581234567" class="nav-banner-item" target="_blank" rel="noopener noreferrer">
+			<div class="banner">
+				<a href="tel:17581234567" class="nav-banner-item">
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
 						<path
 							d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
@@ -30,7 +29,7 @@
 					<span class="nav-banner-item-txt">Tel: 1 (758) 123-4567</span>
 				</a>
 
-				<a href="mailto:info@tinytreasures.com" class="nav-banner-item" target="_blank" rel="noopener noreferrer">
+				<a href="mailto:info@tinytreasures.com" class="nav-banner-item">
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
 						<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
 					</svg>
@@ -51,11 +50,11 @@
 			</div>
 
 			<nav class="nav">
-				<a href="index.html" class="nav-logo" data-aos="fade-right" data-aos-delay="300" data-aos-duration="600" data-aos-easing="ease-in-out">
+				<a href="index.html" class="nav-logo">
 					<img class="nav-logo-img" src="./img/logo.png" alt="Tiny Treasures Pediatric Clinic Logo" />
 				</a>
 
-				<div class="nav-links" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="600" data-aos-easing="ease-in-out">
+				<div class="nav-links">
 					<a href="index.html" class="nav-link nav-link-home">
 						<div class="nav-link-img">
 							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -129,8 +128,8 @@
 					</a>
 				</div>
 
-				<div class="nav-end" data-aos="fade-left" data-aos-delay="300" data-aos-duration="600" data-aos-easing="ease-in-out">
-					<a href="login.html" id="navBtn" class="btn btn-primary">Patient Portal</a>
+				<div class="nav-end">
+					<a href="login.html" class="nav-btn">Login Here</a>
 
 					<button type="button" class="nav-burger">
 						<div class="nav-burger-icon">
@@ -144,293 +143,60 @@
 		</header>
 
 		<main>
-			<section id="hero" data-aos="fade-left" data-aos-delay="0" data-aos-duration="600" data-aos-easing="ease-in-out">
-				<div class="swiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide" style="background-image: url('https://www.uabmedicine.org/wp-content/uploads/sites/3/2023/02/RS38647_Pediatric-Primary-Care-Clinic-20191216-003-6784.jpeg')">
-							<h1 class="hero-h1">Tiny Treasures Pediatrics</h1>
+			<section id="auth-section">
+				<h2 class="auth-title" data-aos="fade-right" data-aos-delay="0" data-aos-duration="600" data-aos-easing="ease-in-out">Sign Up</h2>
 
-							<p class="hero-p">The Best Pediatrics Clinic in Saint Lucia!</p>
+				<form class="auth-form" data-aos="fade-right" data-aos-delay="200" data-aos-duration="600" data-aos-easing="ease-in-out">
+					<input type="text" class="auth-input" id="firstName" placeholder="Your first name" autocomplete="given-name" required />
 
-							<div class="hero-row">
-								<a type="button" href="contact.html" class="btn btn-primary">Contact Us</a>
+					<input type="text" class="auth-input" id="lastName" placeholder="Your last name" autocomplete="family-name" required />
 
-								<a href="about.html" class="hero-a">Learn More &rarr;</a>
-							</div>
-						</div>
+					<input type="email" class="auth-input" id="email" placeholder="Your email address" autocomplete="email" required />
 
-						<div class="swiper-slide" style="background-image: url('https://images.pexels.com/photos/5998443/pexels-photo-5998443.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
-							<h1 class="hero-h1">Tiny Treasures Pediatrics</h1>
+					<div class="password-field">
+						<input type="password" class="auth-input" id="password" placeholder="Your password" autocomplete="new-password" required />
 
-							<p class="hero-p">The Best Pediatrics Clinic in Saint Lucia!</p>
+						<button type="button" id="toggleBtn">
+							<svg class="show-icon active" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+								<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+								<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+							</svg>
 
-							<div class="hero-row">
-								<a type="button" href="contact.html" class="btn btn-primary">Contact Us</a>
-
-								<a href="about.html" class="hero-a">Learn More &rarr;</a>
-							</div>
-						</div>
-
-						<div class="swiper-slide" style="background-image: url('https://images.pexels.com/photos/8460047/pexels-photo-8460047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
-							<h1 class="hero-h1">Tiny Treasures Pediatrics</h1>
-
-							<p class="hero-p">The Best Pediatrics Clinic in Saint Lucia!</p>
-
-							<div class="hero-row">
-								<a type="button" href="contact.html" class="btn btn-primary">Contact Us</a>
-
-								<a href="about.html" class="hero-a">Learn More &rarr;</a>
-							</div>
-						</div>
+							<svg class="hide-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+								<path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486z" />
+								<path d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829" />
+								<path d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708" />
+							</svg>
+						</button>
 					</div>
 
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
-				</div>
-			</section>
+					<div class="password-field">
+						<input type="password" class="auth-input" id="passwordRepeat" placeholder="Repeat your password" autocomplete="new-password" required />
 
-			<section id="about" data-aos="fade-right" data-aos-delay="0" data-aos-duration="600" data-aos-easing="ease-in-out">
-				<div class="about-row">
-					<div class="about-col">
-						<h3 class="about-h3">Welcome to Tiny Treasures Pediatrics</h3>
+						<button type="button" id="toggleBtnRepeat">
+							<svg class="show-icon-repeat active" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+								<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+								<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+							</svg>
 
-						<p class="about-p">Welcome to Tiny Treasures Pediatrics Clinic, where the health and well-being of your little ones are our top priority! At Tiny Treasures, we understand the unique and precious nature of childhood, and we are dedicated to providing compassionate and comprehensive pediatric care.</p>
+							<svg class="hide-icon-repeat" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+								<path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486z" />
+								<path d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829" />
+								<path d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708" />
+							</svg>
+						</button>
 					</div>
 
-					<div class="about-col">
-						<img class="about-img" src="https://images.pexels.com/photos/7653124/pexels-photo-7653124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="About Section Image" />
+					<div class="remember-field">
+						<input type="checkbox" class="remember-input" id="termsAgreement" required />
+
+						<label class="remember-label" for="remember">I agree to the <a href="terms.html" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>.</label>
 					</div>
-				</div>
-			</section>
 
-			<section id="services" data-aos="fade-left" data-aos-delay="0" data-aos-duration="600" data-aos-easing="ease-in-out">
-				<div class="section-title">
-					<p>Our Services</p>
+					<button type="submit" class="auth-btn" onclick="">Create An Account</button>
 
-					<h2>What We Do</h2>
-				</div>
-
-				<div class="services-container">
-					<ul class="services-ul">
-						<li>
-							<a href="./services/routine-checkups.html">
-								<div class="services-card">
-									<img class="services-card-img" src="https://images.pexels.com/photos/7446997/pexels-photo-7446997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Services Image 1" />
-
-									<div class="services-card-txt">
-										<p>Routine Checkups</p>
-									</div>
-								</div>
-							</a>
-						</li>
-
-						<li>
-							<a href="./services/special-checkups.html">
-								<div class="services-card">
-									<img class="services-card-img" src="https://images.pexels.com/photos/3846021/pexels-photo-3846021.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Services Image 3" />
-
-									<div class="services-card-txt">
-										<p>Special Checkups</p>
-									</div>
-								</div>
-							</a>
-						</li>
-
-						<li>
-							<a href="./services/vaccinations.html">
-								<div class="services-card">
-									<img class="services-card-img" src="https://images.pexels.com/photos/7447004/pexels-photo-7447004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Services Image 2" />
-
-									<div class="services-card-txt">
-										<p>Vaccinations</p>
-									</div>
-								</div>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</section>
-
-			<section id="team" data-aos="fade-right" data-aos-delay="0" data-aos-duration="600" data-aos-easing="ease-in-out">
-				<div class="section-title">
-					<p>Our Team</p>
-
-					<h2>Meet The Team</h2>
-				</div>
-
-				<div class="team-container">
-					<ul class="team-ul">
-						<li>
-							<div class="team-card-top">
-								<a href="team.html#smith">
-									<img class="team-card-img" src="https://images.pexels.com/photos/18828741/pexels-photo-18828741/free-photo-of-smiling-doctor-with-a-stethoscope-around-her-neck.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Team Image 1" />
-								</a>
-							</div>
-
-							<div class="team-card-bottom">
-								<div class="team-card-bottom-txt">
-									<h3>Dr. Amanda Smith</h3>
-
-									<p>Lead Pediatric Doctor</p>
-								</div>
-
-								<div class="team-card-bottom-ul">
-									<ul class="team-card-bottom-ul">
-										<li>
-											<a href="#">
-												<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-													<path
-														d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"
-													/>
-												</svg>
-											</a>
-										</li>
-
-										<li>
-											<a href="#">
-												<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-													<path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
-												</svg>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</li>
-
-						<li>
-							<div class="team-card-top">
-								<img class="team-card-img" src="https://images.pexels.com/photos/5722157/pexels-photo-5722157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Team Image 2" />
-							</div>
-
-							<div class="team-card-bottom">
-								<div class="team-card-bottom-txt">
-									<h3>Dr. Chin Wo Wong</h3>
-
-									<p>Child Development Specialist</p>
-								</div>
-
-								<div class="team-card-bottom-ul">
-									<ul class="team-card-bottom-ul">
-										<li>
-											<a href="#">
-												<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-													<path
-														d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"
-													/>
-												</svg>
-											</a>
-										</li>
-
-										<li>
-											<a href="#">
-												<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-													<path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
-												</svg>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</li>
-
-						<li>
-							<div class="team-card-top">
-								<img class="team-card-img" src="https://images.pexels.com/photos/4173249/pexels-photo-4173249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Team Image 3" />
-							</div>
-
-							<div class="team-card-bottom">
-								<div class="team-card-bottom-txt">
-									<h3>Dr. Penelope Sparklepaws</h3>
-
-									<p>Pediatric Dentist</p>
-								</div>
-
-								<div class="team-card-bottom-ul">
-									<ul class="team-card-bottom-ul">
-										<li>
-											<a href="#">
-												<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-													<path
-														d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"
-													/>
-												</svg>
-											</a>
-										</li>
-
-										<li>
-											<a href="#">
-												<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-													<path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
-												</svg>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
-
-			<section id="blog" data-aos="fade-left" data-aos-delay="0" data-aos-duration="600" data-aos-easing="ease-in-out">
-				<div class="section-title">
-					<p>Our Blog</p>
-
-					<h2>Read Our Blog</h2>
-				</div>
-
-				<div class="blog-container">
-					<ul class="blog-ul">
-						<li>
-							<article class="blog-card">
-								<img class="blog-card-img" src="https://images.pexels.com/photos/3765115/pexels-photo-3765115.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blog Image 1" />
-
-								<div class="blog-card-container">
-									<time datetime="2023-12-11" class="blog-card-time">12th Nov 2023</time>
-
-									<a href="blog.html">
-										<h3 class="blog-card-h3">Navigating Flu Season: Tips for a Healthy Winter</h3>
-									</a>
-
-									<p class="blog-card-p">As winter approaches, so does flu season. In this blog post, we explore practical tips to keep you and your family healthy during the colder months. From the importance of flu vaccinations to lifestyle adjustments, discover how to fortify your immune system and minimize the risk of seasonal illnesses.</p>
-								</div>
-							</article>
-						</li>
-
-						<li>
-							<article class="blog-card">
-								<img class="blog-card-img" src="https://images.pexels.com/photos/7446993/pexels-photo-7446993.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blog Image 2" />
-
-								<div class="blog-card-container">
-									<time datetime="2023-1-7" class="blog-card-time">1st Jul 2023</time>
-
-									<a href="blog.html">
-										<h3 class="blog-card-h3">Behind the Scenes: A Day in the Life of a Pediatric Nurse</h3>
-									</a>
-
-									<p class="blog-card-p">Ever wondered what goes on behind the scenes in a pediatric ward? Join us as we shadow Nurse Sarah Thompson, a dedicated pediatric nurse, through her daily routines. Gain insight into the challenges and joys of caring for young patients, and learn about the unique skills and compassion required for this vital healthcare role.</p>
-								</div>
-							</article>
-						</li>
-
-						<li>
-							<article class="blog-card">
-								<img class="blog-card-img" src="https://images.pexels.com/photos/4473612/pexels-photo-4473612.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blog Image 3" />
-
-								<div class="blog-card-container">
-									<time datetime="2022-10-10" class="blog-card-time">10th Oct 2022</time>
-
-									<a href="blog.html">
-										<h3 class="blog-card-h3">Spotlight on Mental Health: Breaking the Stigma</h3>
-									</a>
-
-									<p class="blog-card-p">In this blog post, we shed light on the importance of mental health awareness and the ongoing efforts to break the stigma surrounding mental health issues. From personal stories of resilience to the latest research in mental health care, join us on a journey toward understanding, empathy, and destigmatization.</p>
-								</div>
-							</article>
-						</li>
-					</ul>
-				</div>
+					<p class="auth-txt">Already have an account? <a href="login.html">Login</a></p>
+				</form>
 			</section>
 		</main>
 
@@ -507,23 +273,6 @@
 		</div>
 
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="./js/script.js"></script>
 	</body>
 </html>
-
-<!-- 
-index.html
-contact.html ✅
-about.html ✅
-blog.html ✅
-login.html ✅
-services.html ✅
-signup.html ✅
-team.html
-portal.html
-support.html
-
-
-create new logo
- -->
