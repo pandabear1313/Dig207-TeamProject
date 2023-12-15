@@ -59,18 +59,3 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	});
 });
-
-// HERO SWIPER
-const swiper = new Swiper('.swiper', {
-	direction: 'horizontal',
-	loop: true,
-	speed: 1500,
-	effect: 'fade',
-	autoplay: {
-		delay: 3000,
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-});
