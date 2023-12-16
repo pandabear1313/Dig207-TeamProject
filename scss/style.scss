@@ -425,6 +425,7 @@ body {
 							}
 
 							.hero-row {
+								width: 100%;
 								position: relative;
 								display: flex;
 								align-items: center;
@@ -434,7 +435,7 @@ body {
 
 								.btn {
 									text-align: center;
-									width: 10rem;
+									max-width: 14rem;
 								}
 
 								.hero-a {
@@ -486,6 +487,7 @@ body {
 
 				.page-hero-container {
 					height: 100%;
+					width: 100%;
 					background-size: cover;
 					background-position: 50%;
 					display: flex;
@@ -1164,6 +1166,11 @@ body {
 									}
 								}
 							}
+
+							a {
+								text-decoration: none;
+								color: #000;
+							}
 						}
 					}
 				}
@@ -1541,6 +1548,94 @@ body {
 					width: 100%;
 					grid-template-columns: repeat(1, minmax(0, 1fr));
 				}
+			}
+
+			apt-form-container {
+				font-family: 'Arial', sans-serif;
+				background-color: #f4f4f4;
+				margin: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+			}
+
+			.apt-form {
+				background-color: #fff;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				border: 4px;
+				border-radius: 10px;
+				padding: 30px;
+				max-width: 800px;
+				width: 50%;
+				text-align: center;
+				margin: 20px auto;
+			}
+
+			h1 {
+				color: #333;
+			}
+
+			label {
+				display: block;
+				margin: 15px 0 5px;
+				font-weight: bold;
+				text-align: left;
+			}
+
+			select,
+			input,
+			textarea {
+				width: 100%;
+				padding: 10px;
+				margin-bottom: 10px;
+				border: 1px solid #ccc;
+				border-radius: 20px;
+				box-sizing: border-box;
+			}
+
+			#note {
+				font-style: italic;
+				color: #888;
+				margin-bottom: 15px;
+			}
+
+			#pricelist {
+				margin-top: 20px;
+				padding: 20px;
+				border: 1px solid #ddd;
+				border-radius: 8px;
+			}
+
+			table {
+				width: 100%;
+				border-collapse: collapse;
+				margin-top: 10px;
+			}
+
+			th,
+			td {
+				padding: 10px;
+				text-align: left;
+				border-bottom: 1px solid #ddd;
+			}
+
+			th {
+				background-color: pink;
+			}
+
+			button {
+				background-color: #f576d6;
+				color: #fff;
+				padding: 10px 15px;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+				font-size: 16px;
+			}
+
+			button:hover {
+				background-color: #ed78d1;
 			}
 		}
 	}
