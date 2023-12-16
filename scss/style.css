@@ -860,6 +860,16 @@ html main section.teamDetails .team-details-container .team-details-container-co
 body main section.teamDetails .team-details-container .team-details-container-col:first-of-type {
   grid-column: span 2;
 }
+@media (max-width: 768px) {
+  html main section.teamDetails .team-details-container .team-details-container-col,
+  body main section.teamDetails .team-details-container .team-details-container-col {
+    grid-column: span 6;
+  }
+  html main section.teamDetails .team-details-container .team-details-container-col:first-of-type,
+  body main section.teamDetails .team-details-container .team-details-container-col:first-of-type {
+    grid-column: span 6;
+  }
+}
 html main section.teamDetails .team-details-container .team-details-container-col .team-card,
 body main section.teamDetails .team-details-container .team-details-container-col .team-card {
   margin-top: 1rem;
@@ -939,17 +949,19 @@ html main section.teamDetails .team-details-container .team-details-container-co
 body main section.teamDetails .team-details-container .team-details-container-col .teams-table .teams-table-row:last-of-type {
   border-bottom: none;
 }
-html main section.teamDetails .team-details-container .team-details-container-col .teams-table .teams-table-row .teams-table-title,
-body main section.teamDetails .team-details-container .team-details-container-col .teams-table .teams-table-row .teams-table-title {
-  grid-column: span 1;
-  text-align: left;
-  font-weight: 600;
-}
-html main section.teamDetails .team-details-container .team-details-container-col .teams-table .teams-table-row .teams-table-txt,
-body main section.teamDetails .team-details-container .team-details-container-col .teams-table .teams-table-row .teams-table-txt {
-  grid-column: span 5;
-  text-align: left;
-  font-weight: 200;
+@media (max-width: 768px) {
+  html main section.teamDetails .team-details-container .team-details-container-col .teams-table .teams-table-row .teams-table-title,
+  body main section.teamDetails .team-details-container .team-details-container-col .teams-table .teams-table-row .teams-table-title {
+    grid-column: span 6;
+    text-align: left;
+    font-weight: 600;
+  }
+  html main section.teamDetails .team-details-container .team-details-container-col .teams-table .teams-table-row .teams-table-txt,
+  body main section.teamDetails .team-details-container .team-details-container-col .teams-table .teams-table-row .teams-table-txt {
+    grid-column: span 6;
+    text-align: left;
+    font-weight: 200;
+  }
 }
 html main section#services,
 body main section#services {
@@ -1224,6 +1236,7 @@ body main section#auth-section .auth-form {
   margin: 30px auto 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
   gap: 15px;
 }
@@ -1316,10 +1329,13 @@ body main section#auth-section .auth-form .remember-field {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  padding: 0;
+  margin: 0;
 }
 html main section#auth-section .auth-form .remember-field .remember-input,
 body main section#auth-section .auth-form .remember-field .remember-input {
   cursor: pointer;
+  margin: 0;
 }
 html main section#auth-section .auth-form .remember-field .remember-label,
 body main section#auth-section .auth-form .remember-field .remember-label {
@@ -1622,8 +1638,8 @@ body main section#portal .portal-container .payment ::placeholder {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
-html main section apt-form-container,
-body main section apt-form-container {
+html main section#booking apt-form-container,
+body main section#booking apt-form-container {
   font-family: "Arial", sans-serif;
   background-color: #f4f4f4;
   margin: 0;
@@ -1632,8 +1648,8 @@ body main section apt-form-container {
   align-items: center;
   min-height: 100vh;
 }
-html main section .apt-form,
-body main section .apt-form {
+html main section#booking .apt-form,
+body main section#booking .apt-form {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: 4px;
@@ -1644,23 +1660,29 @@ body main section .apt-form {
   text-align: center;
   margin: 20px auto;
 }
-html main section h1,
-body main section h1 {
+@media (max-width: 991px) {
+  html main section#booking .apt-form,
+  body main section#booking .apt-form {
+    width: 100%;
+  }
+}
+html main section#booking h1,
+body main section#booking h1 {
   color: #333;
 }
-html main section label,
-body main section label {
+html main section#booking label,
+body main section#booking label {
   display: block;
   margin: 15px 0 5px;
   font-weight: bold;
   text-align: left;
 }
-html main section select,
-html main section input,
-html main section textarea,
-body main section select,
-body main section input,
-body main section textarea {
+html main section#booking select,
+html main section#booking input,
+html main section#booking textarea,
+body main section#booking select,
+body main section#booking input,
+body main section#booking textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -1668,39 +1690,39 @@ body main section textarea {
   border-radius: 20px;
   box-sizing: border-box;
 }
-html main section #note,
-body main section #note {
+html main section#booking #note,
+body main section#booking #note {
   font-style: italic;
   color: #888;
   margin-bottom: 15px;
 }
-html main section #pricelist,
-body main section #pricelist {
+html main section#booking #pricelist,
+body main section#booking #pricelist {
   margin-top: 20px;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
 }
-html main section table,
-body main section table {
+html main section#booking table,
+body main section#booking table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
 }
-html main section th,
-html main section td,
-body main section th,
-body main section td {
+html main section#booking th,
+html main section#booking td,
+body main section#booking th,
+body main section#booking td {
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
-html main section th,
-body main section th {
+html main section#booking th,
+body main section#booking th {
   background-color: pink;
 }
-html main section button,
-body main section button {
+html main section#booking button,
+body main section#booking button {
   background-color: #f576d6;
   color: #fff;
   padding: 10px 15px;
@@ -1709,8 +1731,8 @@ body main section button {
   cursor: pointer;
   font-size: 16px;
 }
-html main section button:hover,
-body main section button:hover {
+html main section#booking button:hover,
+body main section#booking button:hover {
   background-color: #ed78d1;
 }
 html footer,
