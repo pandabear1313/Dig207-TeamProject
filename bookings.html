@@ -154,7 +154,7 @@
 
 			<section id="booking">
 				<div class="apt-form" data-aos="fade-left" data-aos-delay="0" data-aos-duration="600" data-aos-easing="ease-in-out">
-					<form action="#" id="appointform" method="post">
+					<form id="appointmentForm">
 						<h1 id="formH">Book Appointment</h1>
 
 						<label for="select location" id="location">Select Location</label>
@@ -225,7 +225,7 @@
 						<p id="note">Please add any extra information you may want us to know below</p>
 						<textarea id="message" rows="5" cols="3" class="personal-dets" placeholder="Type your message" name="ymessage"></textarea>
 
-						<button type="Submit" id="submit" value="submit" onclick="">Submit</button>
+						<button type="Submit">Submit</button>
 					</form>
 				</div>
 			</section>
@@ -321,6 +321,16 @@
 						this.value = '08:00';
 					}
 				});
+			});
+
+			const appointmentForm = document.getElementById('appointmentForm');
+
+			appointmentForm.addEventListener('submit', (e) => {
+				e.preventDefault();
+
+				alert('Your appointment has been made!');
+
+				window.location.href = '/portal.html';
 			});
 		</script>
 	</body>
