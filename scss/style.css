@@ -1642,7 +1642,7 @@ body main section .apt-form {
   max-width: 800px;
   width: 50%;
   text-align: center;
-  margin: 20px;
+  margin: 20px auto;
 }
 html main section h1,
 body main section h1 {
