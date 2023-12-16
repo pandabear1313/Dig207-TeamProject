@@ -854,6 +854,7 @@ body main section.teamDetails .team-details-container {
 }
 html main section.teamDetails .team-details-container .team-details-container-col,
 body main section.teamDetails .team-details-container .team-details-container-col {
+  width: 100%;
   grid-column: span 4;
 }
 html main section.teamDetails .team-details-container .team-details-container-col:first-of-type,
@@ -949,18 +950,26 @@ html main section.teamDetails .team-details-container .team-details-container-co
 body main section.teamDetails .team-details-container .team-details-container-col .teams-table .teams-table-row:last-of-type {
   border-bottom: none;
 }
+html main section.teamDetails .team-details-container .team-details-container-col .teams-table .teams-table-row .teams-table-title,
+body main section.teamDetails .team-details-container .team-details-container-col .teams-table .teams-table-row .teams-table-title {
+  grid-column: span 1;
+  text-align: left;
+  font-weight: 600;
+}
+html main section.teamDetails .team-details-container .team-details-container-col .teams-table .teams-table-row .teams-table-txt,
+body main section.teamDetails .team-details-container .team-details-container-col .teams-table .teams-table-row .teams-table-txt {
+  grid-column: span 5;
+  text-align: left;
+  font-weight: 200;
+}
 @media (max-width: 768px) {
   html main section.teamDetails .team-details-container .team-details-container-col .teams-table .teams-table-row .teams-table-title,
   body main section.teamDetails .team-details-container .team-details-container-col .teams-table .teams-table-row .teams-table-title {
     grid-column: span 6;
-    text-align: left;
-    font-weight: 600;
   }
   html main section.teamDetails .team-details-container .team-details-container-col .teams-table .teams-table-row .teams-table-txt,
   body main section.teamDetails .team-details-container .team-details-container-col .teams-table .teams-table-row .teams-table-txt {
     grid-column: span 6;
-    text-align: left;
-    font-weight: 200;
   }
 }
 html main section#services,
