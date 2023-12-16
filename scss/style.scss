@@ -847,6 +847,7 @@ body {
 					}
 
 					.team-details-container-col {
+						width: 100%;
 						grid-column: span 4;
 
 						&:first-of-type {
@@ -936,17 +937,25 @@ body {
 									border-bottom: none;
 								}
 
+								.teams-table-title {
+									grid-column: span 1;
+									text-align: left;
+									font-weight: 600;
+								}
+
+								.teams-table-txt {
+									grid-column: span 5;
+									text-align: left;
+									font-weight: 200;
+								}
+
 								@media (max-width: 768px) {
 									.teams-table-title {
 										grid-column: span 6;
-										text-align: left;
-										font-weight: 600;
 									}
 
 									.teams-table-txt {
 										grid-column: span 6;
-										text-align: left;
-										font-weight: 200;
 									}
 								}
 							}
