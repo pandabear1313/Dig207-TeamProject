@@ -1206,6 +1206,11 @@ body main section#blog .blog-container .blog-ul li .blog-card .blog-card-contain
   color: #6b7280;
   display: none;
 }
+html main section#blog .blog-container .blog-ul li a,
+body main section#blog .blog-container .blog-ul li a {
+  text-decoration: none;
+  color: #000;
+}
 html main section#auth-section .auth-title,
 body main section#auth-section .auth-title {
   text-align: center;
