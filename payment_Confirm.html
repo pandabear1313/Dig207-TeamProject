@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirm Payment</title>
+    <link rel="stylesheet" href="./CSS/payment.css" />
+    <link rel="shortcut icon" href="./Images/favicon-16x16.png" type="image/x-icon">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Confirm Your Payment</h1>
+
+      <div class="first-row">
+        <label for="Cardholder">Card Holder</label>
+        <input type="text" id="Cardholder" placeholder="Jane Doe" size="43"  maxlength="42"/>
+      </div>
+      <br />
+      <div class="Second-row">
+        <label for="cardID">Card Number</label>
+        <input type="text" id="cardID" placeholder="374245455400126" size="43" maxlength="16" pattern="\d*">
+      </div>
+      <br />
+      <div class="Third-row">
+        <label for="CVV">CVV</label>
+        <input type="text" id="CVV" size="4" placeholder="452" maxlength="3" pattern="\d*">
+      </div>
+
+      <div class="fourth-row">
+        <label for="months">Exp Date</label>
+        <select name="months" id="months">
+          <option value="Jan">January</option>
+          <option value="Feb">February</option>
+          <option value="Mar">March</option>
+          <option value="Apr">April</option>
+          <option value="May">May</option>
+          <option value="Jun">June</option>
+          <option value="Jul">July</option>
+          <option value="Aug">August</option>
+          <option value="Sep">September</option>
+          <option value="Oct">October</option>
+          <option value="Nov">November</option>
+          <option value="Dec">December</option>
+        </select>
+        
+
+        <select name="years" id="years">
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+          <option value="2027">2027</option>
+          <option value="2028">2028</option>
+          <option value="2029">2029</option>
+          <option value="2030">2030</option>
+          <option value="2031">2031</option>
+          <option value="2032">2032</option>
+          <option value="2033">2033</option>
+        </select>
+      </div>
+
+      <div class="cards1">
+        <a href="https://customerportal.mastercard.com/login" target="_blank"> <img src="./Images/mc.png" alt="MasterCard" width="100%" /></a>
+      </div>
+
+      <div class="cards2">
+        <a href="https://www.paypal.com/us/signin" target="_blank"><img src="/Images/pp.png" alt="Paypal" width="100%" /></a>
+      </div>
+
+      <div class="cards3">
+        <a href="https://www.visaonline.com/login/" target="_blank"><img src="/Images/vi.png" alt="Visa" width="100%" /> </a>
+        </div>
+
+      <button type="button" id="payment_Button">Confirm</button>
+    </div>
+  </body>
+</html>
