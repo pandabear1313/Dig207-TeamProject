@@ -339,6 +339,19 @@ body main section {
   margin: 30px 0;
   width: 100%;
 }
+html main section .section-title,
+body main section .section-title {
+  text-align: center;
+}
+html main section .section-title p,
+body main section .section-title p {
+  color: #ffc0d9;
+  margin-bottom: 10px;
+}
+html main section .section-title h2,
+body main section .section-title h2 {
+  color: #000;
+}
 html main section#hero,
 body main section#hero {
   margin: 0 !important;
