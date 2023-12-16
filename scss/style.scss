@@ -425,6 +425,7 @@ body {
 							}
 
 							.hero-row {
+								width: 100%;
 								position: relative;
 								display: flex;
 								align-items: center;
@@ -434,7 +435,7 @@ body {
 
 								.btn {
 									text-align: center;
-									width: 10rem;
+									max-width: 14rem;
 								}
 
 								.hero-a {
@@ -486,6 +487,7 @@ body {
 
 				.page-hero-container {
 					height: 100%;
+					width: 100%;
 					background-size: cover;
 					background-position: 50%;
 					display: flex;

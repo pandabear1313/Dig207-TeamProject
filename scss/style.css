@@ -407,6 +407,7 @@ body main section#hero .swiper .swiper-wrapper .swiper-slide .hero-p {
 }
 html main section#hero .swiper .swiper-wrapper .swiper-slide .hero-row,
 body main section#hero .swiper .swiper-wrapper .swiper-slide .hero-row {
+  width: 100%;
   position: relative;
   display: flex;
   align-items: center;
@@ -417,7 +418,7 @@ body main section#hero .swiper .swiper-wrapper .swiper-slide .hero-row {
 html main section#hero .swiper .swiper-wrapper .swiper-slide .hero-row .btn,
 body main section#hero .swiper .swiper-wrapper .swiper-slide .hero-row .btn {
   text-align: center;
-  width: 10rem;
+  max-width: 14rem;
 }
 html main section#hero .swiper .swiper-wrapper .swiper-slide .hero-row .hero-a,
 body main section#hero .swiper .swiper-wrapper .swiper-slide .hero-row .hero-a {
@@ -467,6 +468,7 @@ body main section#pageHero {
 html main section#pageHero .page-hero-container,
 body main section#pageHero .page-hero-container {
   height: 100%;
+  width: 100%;
   background-size: cover;
   background-position: 50%;
   display: flex;

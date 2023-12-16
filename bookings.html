@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="theme-color" content="#ffc0d9" />
 
-		<title>Patient Portal - Tiny Treasures Pediatric Clinic</title>
+		<title>Book An Appointment - Tiny Treasures Pediatric Clinic</title>
 
 		<link rel="shortcut icon" href="./img/favicon-16x16.png" type="image/x-icon" />
 
@@ -16,6 +16,95 @@
 		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
 		<link rel="stylesheet" href="./scss/style.css" />
+		<style>
+			apt-form-container {
+				width: 100%;
+				font-family: 'Arial', sans-serif;
+				background-color: #f4f4f4;
+				margin: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.apt-form {
+				background-color: #fff;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				border: 4px;
+				border-radius: 10px;
+				padding: 30px;
+				/* max-width: 800px; */
+				width: 50%;
+				text-align: center;
+				margin: 20px auto;
+			}
+
+			h1 {
+				color: #333;
+			}
+
+			label {
+				display: block;
+				margin: 15px 0 5px;
+				font-weight: bold;
+				text-align: left;
+			}
+
+			select,
+			input,
+			textarea {
+				width: 100%;
+				padding: 10px;
+				margin-bottom: 10px;
+				border: 1px solid #ccc;
+				border-radius: 20px;
+				box-sizing: border-box;
+			}
+
+			#note {
+				font-style: italic;
+				color: #888;
+				margin-bottom: 15px;
+			}
+
+			#pricelist {
+				margin-top: 20px;
+				padding: 20px;
+				border: 1px solid #ddd;
+				border-radius: 8px;
+			}
+
+			table {
+				width: 100%;
+				border-collapse: collapse;
+				margin-top: 10px;
+			}
+
+			th,
+			td {
+				padding: 10px;
+				text-align: left;
+				border-bottom: 1px solid #ddd;
+			}
+
+			th {
+				background-color: pink;
+			}
+
+			button {
+				background-color: #f576d6;
+				color: #fff;
+				padding: 10px 15px;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+				font-size: 16px;
+			}
+
+			button:hover {
+				background-color: #ed78d1;
+			}
+		</style>
 	</head>
 	<body>
 		<header>
@@ -146,194 +235,87 @@
 		<main>
 			<section id="pageHero" data-aos="fade-left" data-aos-delay="0" data-aos-duration="600" data-aos-easing="ease-in-out">
 				<div class="page-hero-container" style="background-image: url('')">
-					<h1 class="hero-h1">Patient Portal</h1>
+					<h1 class="hero-h1">Book An Appointment</h1>
 
 					<p class="hero-p">Where love meets medicine!</p>
 				</div>
 			</section>
 
-			<section id="portal">
-				<div class="portal-container">
-					<div class="records" data-aos="fade-right" data-aos-delay="0" data-aos-duration="600" data-aos-easing="ease-in-out">
-						<center>
-							<h1>Patient Records</h1>
+			<div class="apt-form" data-aos="fade-left" data-aos-delay="0" data-aos-duration="600" data-aos-easing="ease-in-out">
+				<form action="#" id="appointform" method="post">
+					<h1 id="formH">Book Appointment</h1>
 
-							<br />
-							<br />
+					<label for="select location" id="location">Select Location</label>
+					<select id="select-location">
+						<option value="Gros Islet">Gros Islet</option>
+						<option value="Castries">Castries</option>
+						<option value="Vieux Fort">Vieux Fort</option>
+					</select>
 
-							<table style="width: 100%">
+					<label for="date">Select Date</label>
+					<input type="date" id="date" name="date" class="dt" required />
+
+					<label for="Utime">Select Time</label>
+					<input type="time" id="Utime" min="8:00" max="17:00" value="8:00" class="dt" required />
+
+					<p id="note">Visiting hours are 8:00am to 5:00pm</p>
+
+					<label for="appointment-type">Appointment Type</label>
+					<select id="appointment-type" name="appointment-type" required>
+						<option value="routine">Routine Checkup</option>
+						<option value="special">Specialized Checkup</option>
+						<option value="vaccine">Vaccinations</option>
+						<option value="consultation">Consultation</option>
+					</select>
+
+					<div id="pricelist" class="personal-dets">
+						<h2>Price List</h2>
+						<table>
+							<thead>
 								<tr>
-									<th>
-										<center>Date</center>
-									</th>
-									<th>
-										<center>Record Details</center>
-									</th>
-									<th>
-										<center>Total</center>
-									</th>
+									<th>Appointment Type</th>
+									<th>Price</th>
 								</tr>
-
+							</thead>
+							<tbody id="price-list-body">
 								<tr>
-									<td>
-										<center>6/12/20</center>
-									</td>
-									<td>
-										<center>COVID-19 Vaccination</center>
-									</td>
-									<td>
-										<center>$300</center>
-									</td>
+									<td>Routine Checkup</td>
+									<td>EC $170</td>
 								</tr>
-
 								<tr>
-									<td>
-										<center>8/15/23</center>
-									</td>
-									<td>
-										<center>Regular Checkup</center>
-									</td>
-									<td>
-										<center>$900</center>
-									</td>
+									<td>Specialized Checkup</td>
+									<td>EC $300</td>
 								</tr>
-							</table>
-						</center>
-
-						<br />
-						<br />
-						<br />
-						<br />
-
-						<center>
-							<h1>Test Results</h1>
-
-							<br />
-							<br />
-
-							<table style="width: 100%">
 								<tr>
-									<th>
-										<center>Date</center>
-									</th>
-									<th>
-										<center>Test Name</center>
-									</th>
-									<th>
-										<center>Result</center>
-									</th>
+									<td>Vaccinations</td>
+									<td>EC $50</td>
 								</tr>
-
 								<tr>
-									<td>
-										<center>6/12/20</center>
-									</td>
-									<td>
-										<center>COVID-19</center>
-									</td>
-									<td>
-										<center>NEGATIVE</center>
-									</td>
+									<td>Consultation</td>
+									<td>EC $120</td>
 								</tr>
-
-								<tr>
-									<td>
-										<center>8/15/23</center>
-									</td>
-									<td>
-										<center>HIV</center>
-									</td>
-									<td>
-										<center>POSITIVE</center>
-									</td>
-								</tr>
-							</table>
-						</center>
+							</tbody>
+						</table>
 					</div>
 
-					<div class="payment" data-aos="fade-left" data-aos-delay="0" data-aos-duration="600" data-aos-easing="ease-in-out">
-						<center>
-							<h1>Patient Payment</h1>
+					<label for="personaldetails" id="p-dets" class="format"></label>
+					<br />
+					<label for="name" class="personal-dets">Enter Full Name:</label>
+					<input type="text" id="name" class="personal-dets" placeholder="John Doe" name="yname" required />
 
-							<br />
-							<br />
+					<label for="tel" class="personal-dets">Enter Telephone Number:</label>
+					<input type="tel" id="tele" class="personal-dets" placeholder="1-758-458-6989" name="ynumber" required />
 
-							<div class="container">
-								<h1>Confirm Your Payment</h1>
+					<label for="email" class="personal-dets">Enter Email Address</label>
+					<input type="email" id="email" class="personal-dets" placeholder="johndoe@example.com" name="yemail" required />
 
-								<div class="first-row">
-									<label for="Cardholder">Card Holder</label>
-									<input type="text" id="Cardholder" placeholder="Jane Doe" size="43" maxlength="42" />
-								</div>
+					<label for="message" class="personal-dets">Additional Info</label>
+					<p id="note">Please add any extra information you may want us to know below</p>
+					<textarea id="message" rows="5" cols="3" class="personal-dets" placeholder="Type your message" name="ymessage"></textarea>
 
-								<br />
-
-								<div class="Second-row">
-									<label for="cardID">Card Number</label>
-									<input type="text" id="cardID" placeholder="374245455400126" size="43" maxlength="16" pattern="\d*" />
-								</div>
-
-								<br />
-
-								<div class="Third-row">
-									<label for="CVV">CVV</label>
-									<input type="text" id="CVV" size="4" placeholder="452" maxlength="3" pattern="\d*" />
-								</div>
-
-								<div class="fourth-row">
-									<label for="months">Exp Date</label>
-
-									<select name="months" id="months">
-										<option value="Jan">January</option>
-										<option value="Feb">February</option>
-										<option value="Mar">March</option>
-										<option value="Apr">April</option>
-										<option value="May">May</option>
-										<option value="Jun">June</option>
-										<option value="Jul">July</option>
-										<option value="Aug">August</option>
-										<option value="Sep">September</option>
-										<option value="Oct">October</option>
-										<option value="Nov">November</option>
-										<option value="Dec">December</option>
-									</select>
-
-									<select name="years" id="years">
-										<option value="2024">2024</option>
-										<option value="2025">2025</option>
-										<option value="2026">2026</option>
-										<option value="2027">2027</option>
-										<option value="2028">2028</option>
-										<option value="2029">2029</option>
-										<option value="2030">2030</option>
-										<option value="2031">2031</option>
-										<option value="2032">2032</option>
-										<option value="2033">2033</option>
-									</select>
-								</div>
-
-								<div class="cards1">
-									<img src="./img/mc.png" alt="MasterCard" width="100%" />
-								</div>
-
-								<div class="cards2">
-									<img src="./img/pp.png" alt="Paypal" width="100%" />
-								</div>
-
-								<div class="cards3">
-									<img src="./img/vi.png" alt="Visa" width="100%" />
-								</div>
-
-								<h3><strong>Total: $1,200.00</strong></h3>
-
-								<br />
-
-								<button type="button" id="payment_Button">Confirm</button>
-							</div>
-						</center>
-					</div>
-				</div>
-			</section>
+					<button type="Submit" id="submit" value="submit" onclick="">Submit</button>
+				</form>
+			</div>
 		</main>
 
 		<footer>
@@ -411,5 +393,22 @@
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="./js/script.js"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				var timeInput = document.getElementById('Utime');
+
+				timeInput.addEventListener('input', function () {
+					var selectedTime = new Date('1970-01-01T' + this.value + ':00');
+
+					var minTime = new Date('1970-01-01T08:00:00');
+					var maxTime = new Date('1970-01-01T17:00:00');
+
+					if (selectedTime < minTime || selectedTime > maxTime) {
+						alert('Please select a time between 8:00 am and 5:00 pm.');
+						this.value = '08:00';
+					}
+				});
+			});
+		</script>
 	</body>
 </html>
